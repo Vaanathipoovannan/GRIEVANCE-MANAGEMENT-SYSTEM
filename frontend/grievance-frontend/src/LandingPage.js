@@ -1,26 +1,46 @@
-import React from 'react';
-import './LandingPage.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function LandingPage() {
+const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <header className="header">
-        <h1>Welcome to the Grievance Management System</h1>
-        <p>Your one-stop platform to raise and track grievances efficiently.</p>
-        <button className="cta-button">Get Started</button>
-      </header>
-      <section className="how-it-works">
-        <h2>How It Works</h2>
-        <ul>
-          <li>Step 1: Register or Login</li>
-          <li>Step 2: Submit your complaint</li>
-          <li>Step 3: Track your complaint status</li>
-          <li>Step 4: Get resolution notifications</li>
-        </ul>
-      </section>
+    <div>
+      {/* Navbar */}
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <a className="navbar-brand text-white fw-bold" href="#">PUBLIC GRIEVANCE MANAGEMENT SYSTEM</a>
+        <div className="ms-auto">
+          <a className="text-white mx-3" href="#">Home</a>
+          <a className="text-white mx-3" href="#">About</a>
+          <a className="text-white mx-3" href="#">Contact</a>
+          <a className="text-white mx-3" href="#" style={{ color: "#ea4a57" }}>
+            Login/ Register
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <div
+        className="text-center text-white d-flex flex-column justify-content-center align-items-center"
+        style={{
+          background: "url('C:\Users\SRI\Desktop\grievance management system\frontend\grievance-frontend\public\images\image1.jpg') no-repeat center center/cover",
+          height: "70vh",
+        }}
+      >
+        <h2 className="fw-bold">PUBLIC GRIEVANCE MANAGEMENT SYSTEM</h2>
+        <p className="fw-semibold">
+          We respect your privacy, Your data is confidential & securely stored
+        </p>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-danger text-white text-center py-3">
+        <div>
+          <a href="#" className="text-white me-4">Contact</a>
+          <a href="#" className="text-white">Social Media</a>
+        </div>
+        <p className="mt-2 mb-0">&copy; 2025 Grievance Management System</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default LandingPage;
-
