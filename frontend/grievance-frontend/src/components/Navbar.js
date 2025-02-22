@@ -10,7 +10,7 @@ function Navbar() {
       <Link to="/register">Register</Link>
       <Link to="/complaint-status">Complaint Status</Link>
       <Link to="/profile">Profile</Link>
-      {/* Add more links as needed */}
+      
     </nav>
   );
 }

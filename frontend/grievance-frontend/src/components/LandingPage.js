@@ -1,20 +1,26 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div>
-      {/* Navbar */}
+      
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
         <a className="navbar-brand text-white fw-bold" href="#">PUBLIC GRIEVANCE MANAGEMENT SYSTEM</a>
         <div className="ms-auto">
-          <a className="text-white mx-3" href="#">Home</a>
+          <a className="text-white mx-3" href="/">Home</a>
           <a className="text-white mx-3" href="#">About</a>
           <a className="text-white mx-3" href="#">Contact</a>
           <a className="text-white mx-3" href="#" style={{ color: "#ea4a57" }}>
             Login/ Register
           </a>
+          <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
+      <Link to="/complaint-status">Complaint Status</Link>
+      <Link to="/profile">Profile</Link>
         </div>
+        
       </nav>
 
       {/* Hero Section */}
